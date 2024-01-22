@@ -1,3 +1,5 @@
+projectDir="/home/mdashboard/Projects/LCD-show"
+cd $projectDir
 sudo cp ./boot/overlays/osoyoo35b.dtb /boot/overlays/
 sudo cp ./boot/overlays/osoyoo35b.dtb /boot/overlays/osoyoo35b.dtbo
 
@@ -25,3 +27,6 @@ if [ $# -eq 1 ]; then
 elif [ $# -eq 0 ]; then
  sh ./lcd35b-rotate 0
 fi
+
+exit 0
+
